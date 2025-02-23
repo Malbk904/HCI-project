@@ -1,0 +1,138 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf1f7; /* Soft background color to match the logo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #f8bfc8, #f5a6b3); /* Gradient to reflect the pink tones */
+    color: #333;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Navigation styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    background-color: #f8bfc8; /* Matching the pink tones */
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #e18da2; /* A deeper pink color for navigation buttons */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #c76d8d; /* A darker pink on hover */
+}
+
+/* Section styles */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+section h2 {
+    color: #e18da2; /* Matching section headers to the logo colors */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5a6b3; /* Softer pink for the footer */
+    color: white;
+}
+
+/* Link styles */
+a {
+    color: #e18da2; /* Match the text link color with the logo */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Profile image */
+.profile {
+    width: 150px;
+    height: auto;
+    border-radius: 50%; /* Make profile image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contacts List */
+ul.contacts {
+    list-style: none;
+    padding: 0;
+}
+
+ul.contacts li {
+    margin: 10px 0;
+}
+
+ul.contacts li a {
+    color: #e18da2; /* Match contact links to logo */
+    text-decoration: none;
+}
+
+ul.contacts li a:hover {
+    color: #c76d8d; /* Darker pink on hover */
+    text-decoration: underline;
+}
+
+/* Ensure the section is flexbox for horizontal layout */
+.meeting-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.meeting {
+    width: 30%; /* Each meeting occupies 30% of the container */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .item {
+        flex: 1 1 100%; /* Each item takes up 100% of the container on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Adjust font size for small screens */
+    }
+}
+
